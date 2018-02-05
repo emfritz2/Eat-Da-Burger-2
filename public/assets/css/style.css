@@ -1,0 +1,21 @@
+body {
+    margin: 40px;
+}
+
+h1 {
+	font-size: 40px;
+	color: #50A39A;
+}
+
+h4 {
+	font-size: 18px;
+	color: #50A39A;
+}
+
+#add-burger {
+	margin-top: 40px;
+}
+
+.input-group {
+	padding: 8px;
+}
