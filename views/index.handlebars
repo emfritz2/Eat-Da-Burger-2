@@ -7,18 +7,18 @@
 
 {{!-- left side --}}
     <div class="col-md-6">
-      <h4 class="wait">BURGERS TO EAT</h4>
+      <h4>BURGERS TO EAT</h4>
       <div id="ready_to_eat">
 
 {{!-- insert the burgers --}}
         {{#each burgers}}
           {{#unless devoured}}
-          <form action="burger/eat/{{id}}" method="POST">
-            <input type="hidden" name="devoured" value={{this.id}}>
+          <form action="burger/eat/{{id}}">
+            <input type="hidden" class="burger_id" value={{this.id}}>
             <div class="input-group">
               <li class="form-control">{{burger_name}}</li>
                 <span class="input-group-btn">
-                  <a class="waves-effect waves-light btn" type="submit">Eat It</a>
+                  <button class="waves-effect waves-light btn" type="submit">Eat It</button>
                 </span>
             </div>
           </form>
@@ -32,8 +32,8 @@
   <center>
 {{!-- right side --}}
     <div class="col-md-6">
-      <h4 class="eat">ALREADY EATEN</h4>
-      <div id="ready_to_eat">
+      <h4>ALREADY EATEN</h4>
+      <div id="eaten">
 
 {{!-- change the burgers to eaten--}}
         {{#each burgers}}

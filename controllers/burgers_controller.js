@@ -32,7 +32,7 @@ router.post("/burger/make", function(req, res) {
 router.put("/burger/eat/:id", function(req, res) {
 
   burger.updateOne(req.params.id, function(result){
-    res.redirect("/burger");
+    res.json("/");
   });
 });
 

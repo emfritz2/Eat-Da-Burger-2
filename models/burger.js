@@ -16,10 +16,10 @@ var burger = {
   },
 
   updateOne: function(id, cb) {
-    var condition = "id=" + id;
+    var change = "id=" + id;
     orm.updateOne("burgers", {
       devoured: true
-    }, condition, cb);
+    }, change, cb);
   }
 };
 
